@@ -1,0 +1,393 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000000;
+	color: #ffffff;	
+	height: 125px;
+	border-top: 10px solid #40aed7;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: "Georgia Regular";
+	font-size: 28px;
+}
+
+.logo p {
+	font-size: 11px;
+}
+
+.navigation_button {
+	font-family: "Georgia Regular";
+	font-size: 13px;
+}
+
+.button_nav {
+	background-color: #000000;
+	text-transform:uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 20%;
+	padding: 0;
+	color: #ffffff;
+	text-align: center;
+    padding: 15px 20px;
+    border: solid 1px black;
+}
+
+.button_nav:hover {
+	background-color: #40aed7;
+}
+
+main {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+.massive {
+	background-color:  #ffffff;
+	color: #333333;
+	font-size: 145px;
+    line-height: 0.9;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	box-sizing: border-box;
+}
+
+.massive h2 {
+	color: #333333;
+}
+
+h3 {
+	font-size: 32px;
+	font-family: "Georgia Regular";
+	line-height: 0.8;
+	text-transform:uppercase;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+.service_menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	background-color:  #ffffff;
+}
+
+.service_menu li {
+	font-size: 12px;
+	font-family: "Georgia Regular";
+	line-height: 1.5;
+	border: 1px solid #d3d3d3;
+	text-align: center;
+	width: 225px;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+.service_menu li:nth-child(-n+3) {
+	margin-right: 30px;
+}
+
+
+.service_menu .service_menu_icon {
+	width: 225px;
+	height: 134px;
+	background-repeat: no-repeat;
+	background-position: center center;
+    margin: 0 auto; 
+}
+
+.service_menu .service_menu_icon.icon_1 {
+	background-image: url(./icon/icon1_bl.png);
+}
+.service_menu .service_menu_icon.icon_2 {
+	background-image: url(./icon/icon2_bl.png);
+}
+.service_menu .service_menu_icon.icon_3 {
+	background-image: url(./icon/icon3_bl.png);
+}
+.service_menu .service_menu_icon.icon_4 {
+	background-image: url(./icon/icon4_bl.png);
+}
+
+.service_menu li:hover .service_menu_icon.icon_1 {
+	background-image: url(./icon/icon1_wh.png);
+}
+.service_menu li:hover .service_menu_icon.icon_2 {
+	background-image: url(./icon/icon2_wh.png);
+}
+.service_menu li:hover .service_menu_icon.icon_3 {
+	background-image: url(./icon/icon3_wh.png);
+}
+.service_menu li:hover .service_menu_icon.icon_4 {
+	background-image: url(./icon/icon4_wh.png);
+}
+
+
+.service_menu li:hover {
+	background-color: #40aed7;
+  	color: #ffffff;
+  	cursor: pointer;
+}
+
+.service_menu p {
+	color: #d3d3d3;
+}
+
+.our_team {
+	background-color:  #ffffff;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+.our_team h2 {
+	color: #d3d3d3;
+	font-size: 142px;
+	line-height: 0.8;
+	text-align: center;
+}
+
+.foto_team {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	background-color:  #ffffff;
+	padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.foto_team h4 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Georgia Regular";
+	line-height: 1.5;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: 2px solid #d3d3d3;
+	text-align: center;
+}
+
+.foto_team li {
+	font-size: 12px;
+	font-family: "Georgia Regular";
+	line-height: 1.5;
+	text-align: right;
+	width: 225px;
+    min-height: 300px;
+}
+
+.foto_team li:nth-child(-n+3){
+	margin-right: 30px;
+}
+
+.foto_team li p {
+	text-align: left;
+	color: #d3d3d3;
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+	color: #40aed7;
+	text-decoration: none;
+}
+
+.foto_team a:after {
+	content: ">>" ;
+    font-size: 8px;
+    padding-left: 5px;
+}
+
+.information_of_blog_menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: stretch;
+	background-color: #303030;
+	padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #d3d3d3;
+	font-size: 13px;
+  	font-family: "Georgia Regular";
+  	line-height: 2;
+  	text-align: left; 
+}
+
+
+.information_of_blog_menu > li {
+	width: 25%;
+	padding-right: 20px;
+}
+
+.information_of_blog_menu li h5{
+	color:  #ffffff;
+	padding-bottom: 30px;
+	font-size: 16px;
+}
+
+.quotes:after {
+	content: ">>" ;
+    font-size: 8px;
+    padding-left: 5px;
+}
+
+.information_of_blog_menu .post_title {
+	font-size: 13px;
+}
+
+
+.information_of_blog_menu .admin {
+  	font-size: 10px;
+  	font-family: "Georgia Regular";
+}
+
+.list_links li {
+	border-bottom: solid 1px #404040;
+}
+
+.list_links li:before {
+    content: ">>" ;
+    font-size: 8px;
+    padding-right: 5px;
+
+}
+
+.information_of_blog_menu ul {
+	font-size: 13px;
+	font-family: "Georgia Regular";
+	color: rgb(64, 174, 215);
+	line-height: 2.65;
+	text-align: left;
+}
+
+input {
+
+    width: 100%;
+    min-height: 45px;
+    background-color: rgb(40, 40, 40);
+    font-size: 13px;
+    font-family: "Georgia Regular";
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+textarea  {
+	display: block;
+	width: 100%;
+	min-height: 80px;
+	background-color: rgb(40, 40, 40); 
+	font-size: 13px;
+	font-family: "Georgia Regular";
+	text-align: left;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 15px;
+	color: #d3d3d3;
+	box-sizing: border-box;
+}
+
+.button_submit {
+	width: 75px;
+	height: 35px;
+	color: #d3d3d3;
+    font-family: "Georgia Regular";
+    background-color: #40aed7;
+    border: none;
+    border-radius: 15%;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+.copyright {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+	background-color: #202020;
+	color: rgb(155, 155, 155);
+	padding: 20px 20px;
+}
+
