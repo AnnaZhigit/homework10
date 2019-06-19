@@ -106,7 +106,7 @@ main {
 	height: 100%;
 }
 
-.massive {
+.title1 {
 	background-color:  #ffffff;
 	color: #333333;
 	font-size: 145px;
@@ -117,7 +117,7 @@ main {
 	box-sizing: border-box;
 }
 
-.massive h2 {
+.title1 h2 {
 	color: #333333;
 }
 
@@ -201,13 +201,13 @@ h3 {
 	color: #d3d3d3;
 }
 
-.our_team {
+.title2 {
 	background-color:  #ffffff;
 	padding-left: 50px;
 	padding-top: 50px;
 }
 
-.our_team h2 {
+.title2 h2 {
 	color: #d3d3d3;
 	font-size: 142px;
 	line-height: 0.8;
