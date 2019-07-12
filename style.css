@@ -268,6 +268,10 @@ a {
     padding-left: 5px;
 }
 
+.container {
+	background-color: #303030;
+}
+
 .information_of_blog_menu {
 	display: flex;
 	flex-direction: row;
@@ -275,7 +279,6 @@ a {
 	justify-content: space-around;
 	align-items: flex-start;
 	align-content: stretch;
-	background-color: #303030;
 	padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 15px;
@@ -284,16 +287,18 @@ a {
 	font-size: 13px;
   	font-family: "Georgia Regular";
   	line-height: 2;
-  	text-align: left; 
+  	text-align: left;
+  	max-width: 995px;
+  	margin: 0 auto; 
 }
 
 
-.information_of_blog_menu > li {
+.information_of_blog_menu .wrapper {
 	width: 25%;
 	padding-right: 20px;
 }
 
-.information_of_blog_menu li h5{
+.information_of_blog_menu h5{
 	color:  #ffffff;
 	padding-bottom: 30px;
 	font-size: 16px;
@@ -374,7 +379,7 @@ textarea  {
     font-family: "Georgia Regular";
     background-color: #40aed7;
     border: none;
-    border-radius: 15%;
+    border-radius: 10px;
     text-transform:uppercase;
     font-weight: bold;
 }
